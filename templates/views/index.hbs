@@ -1,0 +1,699 @@
+<div class="main-content clearfix" data-sidebar="right">
+	<div class="kd-container">
+		<div class="kd-row">
+			<div class="blog-posts">
+				<div class="wrap-posts clearfix">
+					{{# each data.posts.results}}
+						<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+							<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+							<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
+								{{#if author.name.first}}by {{author.name.first}}{{/if}}
+							</p>
+							{{#if image}}<img src="{{image.url}}" class="img pull-right">{{/if}}
+							<p>{{{content.brief}}}</p>
+							{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}
+						</div>
+					{{/each}}
+					<!-- Post -->
+					<div class="kd-col">
+						<div class="post">
+
+							<!-- Thumbnail -->
+							<div class="post-media">
+								<!-- Post Detail -->
+								<div class="post-detail">
+									<a href="#" class="post-format">
+										<i class="fa fa-picture-o"></i>
+									</a>
+									<a href="#" class="post-author">
+										By Admin
+									</a>
+									<a href="#">October 9, 2016</a>
+									<a href="#" class="post-comment-count">
+										05 Comments
+									</a>
+								</div>
+								<!-- End Post Detail -->
+
+								<a href="#">
+									<div class="image" style="background-image:url(images/posts/1.jpg)">
+										<img src="images/posts/1.jpg">
+									</div>
+								</a>
+
+							</div>
+							<!-- End Thumbnail -->
+
+							<!-- Content -->
+							<div class="post-content">
+
+								<!-- Category -->
+								<div class="post-cat">
+									<ul>
+										<li>
+											<a href="#">Travel</a>
+										</li>
+										<li>
+											<a href="#">Lifestyle</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Category -->
+
+								<h2 class="title">
+									<a href="#">I HAVE A HAPPY AND PEACEFUL LIFE THERE</a>
+								</h2>
+								<hr class="divider" />
+
+								<div class="date">
+									<a href="#">October 9, 2016</a>
+								</div>
+								<div class="the-excerpt">
+									<p>
+										Risus nam porttitor vel ridiculus ultricies aliquet dapibus, mollis praesent tellus libero semper cursus curae; potenti.
+										Ac dis. Sapien luctus. Taciti nunc magna tincidunt adipiscing pretium pharetra
+										platea. Vivamus quisque duis ullamcorper Adipiscing aliquet lectus. Amet
+										augue rutrum gravida tellus nostra integer netus, feugiat sociis. Euismod
+										nunc lacus ante commodo tortor montes eu duis orci tempor iaculis sociosqu.
+									</p>
+								</div>
+
+								<div class="post-footer">
+									<div class="table">
+										<div class="table-cell post-detail">
+											<a href="#" class="post-format">
+												<i class="fa fa-picture-o"></i>
+											</a>
+											<a href="#" class="post-author">
+												By Admin
+											</a>
+											<a href="#" class="post-comment-count">
+												05 Comments
+											</a>
+										</div>
+										<div class="table-cell read-more">
+											<a href="#">Read more</a>
+										</div>
+										<div class="table-cell post-share">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-digg"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- End Content -->
+
+							<!-- Related Posts -->
+							<div class="related-posts">
+								<h2 class="related-posts-title title">YOU MAY ALSO LIKE</h2>
+								<div class="related-wrap">
+									<table class="related-table">
+										<tbody>
+										<tr>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/14.jpg)">
+															<img src="images/posts/14.jpg" alt="Image" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">ENJOY THE FRUITS OF YOUR LABOUR</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/15.jpg)">
+															<img src="images/posts/15.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">PAINTING IS JUST ANOTHER WAY OF KEEPING A DIARY</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/16.jpg)">
+															<img src="images/posts/16.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">EAST OR WEST, HOME IS BEST</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/17.jpg)">
+															<img src="images/posts/17.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">THE FRIENDSHIP IS VERY BEAUTIFUL</a>
+													</h3>
+												</div>
+											</td>
+
+										</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- End Related Posts -->
+						</div>
+					</div>
+					<!-- End Post -->
+
+					<!-- Post -->
+					<div class="kd-col">
+						<div class="post">
+
+							<!-- Thumbnail -->
+							<div class="post-media">
+								<!-- Post Detail -->
+								<div class="post-detail">
+									<a href="#" class="post-format">
+										<i class="fa fa-picture-o"></i>
+									</a>
+									<a href="#" class="post-author">
+										By Admin
+									</a>
+									<a href="#">October 9, 2016</a>
+									<a href="#" class="post-comment-count">
+										05 Comments
+									</a>
+								</div>
+								<!-- End Post Detail -->
+								<a href="#">
+									<div class="image" style="background-image:url(images/posts/2.jpg)">
+										<img src="images/posts/2.jpg">
+									</div>
+								</a>
+
+							</div>
+							<!-- End Thumbnail -->
+
+							<!-- Content -->
+							<div class="post-content">
+
+								<!-- Category -->
+								<div class="post-cat">
+									<ul>
+										<li>
+											<a href="#">BEAUTIFUL</a>
+										</li>
+										<li>
+											<a href="#">ARTIST</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Category -->
+
+								<h2 class="title">
+									<a href="#">THEIR HAPPINESS COMES BEFORE ANYTHING ELSE</a>
+								</h2>
+								<hr class="divider" />
+
+								<div class="date">
+									<a href="#">October 9, 2016</a>
+								</div>
+								<div class="the-excerpt">
+									<p>
+										Risus nam porttitor vel ridiculus ultricies aliquet dapibus, mollis praesent tellus libero semper cursus curae; potenti.
+										Ac dis. Sapien luctus. Taciti nunc magna tincidunt adipiscing pretium pharetra
+										platea. Vivamus quisque duis ullamcorper Adipiscing aliquet lectus. Amet
+										augue rutrum gravida tellus nostra integer netus, feugiat sociis. Euismod
+										nunc lacus ante commodo tortor montes eu duis orci tempor iaculis sociosqu.
+									</p>
+								</div>
+
+								<div class="post-footer">
+									<div class="table">
+										<div class="table-cell post-detail">
+											<a href="#" class="post-format">
+												<i class="fa fa-picture-o"></i>
+											</a>
+											<a href="#" class="post-author">
+												By Admin
+											</a>
+											<a href="#" class="post-comment-count">
+												05 Comments
+											</a>
+										</div>
+										<div class="table-cell read-more">
+											<a href="#">Read more</a>
+										</div>
+										<div class="table-cell post-share">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-digg"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- End Content -->
+
+							<!-- Related Posts -->
+							<div class="related-posts">
+								<h2 class="related-posts-title title">YOU MAY ALSO LIKE</h2>
+								<div class="related-wrap">
+									<table class="related-table">
+										<tbody>
+										<tr>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/18.jpg)">
+															<img src="images/posts/18.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">INFORMATION TECHNOLOGY IS MAKING GREAT STRIDES</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/19.jpg)">
+															<img src="images/posts/19.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">A SMILE IS A SIGN OF FRIENDLINESS AND INTEREST</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/20.jpg)">
+															<img src="images/posts/20.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">IN DAILY LIFE, PEOPLE HAVE MANY WAY TO GET PLEASURE</a>
+													</h3>
+												</div>
+											</td>
+
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- End Related Posts -->
+						</div>
+					</div>
+					<!-- End Post -->
+
+					<!-- Post -->
+					<div class="kd-col">
+						<div class="post">
+
+							<!-- Thumbnail -->
+							<div class="post-media">
+								<!-- Post Detail -->
+								<div class="post-detail">
+									<a href="#" class="post-format">
+										<i class="fa fa-picture-o"></i>
+									</a>
+									<a href="#" class="post-author">
+										By Admin
+									</a>
+									<a href="#">October 9, 2016</a>
+									<a href="#" class="post-comment-count">
+										05 Comments
+									</a>
+								</div>
+								<!-- End Post Detail -->
+								<a href="#">
+									<div class="image" style="background-image:url(images/posts/3.jpg)">
+										<img src="images/posts/3.jpg">
+									</div>
+								</a>
+
+							</div>
+							<!-- End Thumbnail -->
+
+							<!-- Content -->
+							<div class="post-content">
+
+								<!-- Category -->
+								<div class="post-cat">
+									<ul>
+										<li>
+											<a href="#">Travel</a>
+										</li>
+										<li>
+											<a href="#">BEAUTIFUL</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Category -->
+
+								<h2 class="title">
+									<a href="#">THE BASIS OF FRIENDSHIP IS SHARING</a>
+								</h2>
+								<hr class="divider" />
+
+								<div class="date">
+									<a href="#">October 9, 2016</a>
+								</div>
+								<div class="the-excerpt">
+									<p>
+										Risus nam porttitor vel ridiculus ultricies aliquet dapibus, mollis praesent tellus libero semper cursus curae; potenti.
+										Ac dis. Sapien luctus. Taciti nunc magna tincidunt adipiscing pretium pharetra
+										platea. Vivamus quisque duis ullamcorper Adipiscing aliquet lectus. Amet
+										augue rutrum gravida tellus nostra integer netus, feugiat sociis. Euismod
+										nunc lacus ante commodo tortor montes eu duis orci tempor iaculis sociosqu.
+									</p>
+								</div>
+
+								<div class="post-footer">
+									<div class="table">
+										<div class="table-cell post-detail">
+											<a href="#" class="post-format">
+												<i class="fa fa-picture-o"></i>
+											</a>
+											<a href="#" class="post-author">
+												By Admin
+											</a>
+											<a href="#" class="post-comment-count">
+												05 Comments
+											</a>
+										</div>
+										<div class="table-cell read-more">
+											<a href="#">Read more</a>
+										</div>
+										<div class="table-cell post-share">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-digg"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- End Content -->
+
+							<!-- Related Posts -->
+							<div class="related-posts">
+								<h2 class="related-posts-title title">YOU MAY ALSO LIKE</h2>
+								<div class="related-wrap">
+									<table class="related-table">
+										<tbody>
+										<tr>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/21.jpg)">
+															<img src="images/posts/21.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">I LIKE TO DISCUSS THE PLANS WITH AN EXPERT</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/22.jpg)">
+															<img src="images/posts/22.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">LET’S DEPEND UPON ONE’S OWN EFFORTSC</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/23.jpg)">
+															<img src="images/posts/23.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">THEIR HAPPINESS COMES BEFORE ANYTHING ELSE</a>
+													</h3>
+												</div>
+											</td>
+
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- End Related Posts -->
+						</div>
+					</div>
+					<!-- End Post -->
+
+					<!-- Post -->
+					<div class="kd-col">
+						<div class="post">
+
+							<!-- Thumbnail -->
+							<div class="post-media">
+								<!-- Post Detail -->
+								<div class="post-detail">
+									<a href="#" class="post-format">
+										<i class="fa fa-picture-o"></i>
+									</a>
+									<a href="#" class="post-author">
+										By Admin
+									</a>
+									<a href="#">October 9, 2016</a>
+									<a href="#" class="post-comment-count">
+										05 Comments
+									</a>
+								</div>
+								<!-- End Post Detail -->
+
+								<a href="#">
+									<div class="image" style="background-image:url(images/posts/4.jpg)">
+										<img src="images/posts/4.jpg">
+									</div>
+								</a>
+
+							</div>
+							<!-- End Thumbnail -->
+
+							<!-- Content -->
+							<div class="post-content">
+
+								<!-- Category -->
+								<div class="post-cat">
+									<ul>
+										<li>
+											<a href="#">Lifestyle</a>
+										</li>
+										<li>
+											<a href="#">BEAUTIFUL</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Category -->
+
+								<h2 class="title">
+									<a href="#">THE SOONER YOU TRY THE SOONER YOU CAN SUCCEED</a>
+								</h2>
+								<hr class="divider" />
+
+								<div class="date">
+									<a href="#">October 9, 2016</a>
+								</div>
+								<div class="the-excerpt">
+									<p>
+										Risus nam porttitor vel ridiculus ultricies aliquet dapibus, mollis praesent tellus libero semper cursus curae; potenti.
+										Ac dis. Sapien luctus. Taciti nunc magna tincidunt adipiscing pretium pharetra
+										platea. Vivamus quisque duis ullamcorper Adipiscing aliquet lectus. Amet
+										augue rutrum gravida tellus nostra integer netus, feugiat sociis. Euismod
+										nunc lacus ante commodo tortor montes eu duis orci tempor iaculis sociosqu.
+									</p>
+								</div>
+
+								<div class="post-footer">
+									<div class="table">
+										<div class="table-cell post-detail">
+											<a href="#" class="post-format">
+												<i class="fa fa-picture-o"></i>
+											</a>
+											<a href="#" class="post-author">
+												By Admin
+											</a>
+											<a href="#" class="post-comment-count">
+												05 Comments
+											</a>
+										</div>
+										<div class="table-cell read-more">
+											<a href="#">Read more</a>
+										</div>
+										<div class="table-cell post-share">
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-google-plus"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-digg"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- End Content -->
+
+							<!-- Related Posts -->
+							<div class="related-posts">
+								<h2 class="related-posts-title title">YOU MAY ALSO LIKE</h2>
+								<div class="related-wrap">
+									<table class="related-table">
+										<tbody>
+										<tr>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/24.jpg)">
+															<img src="images/posts/24.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">THE SOONER YOU TRY THE SOONER YOU CAN SUCCEED</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/25.jpg)">
+															<img src="images/posts/25.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">LET’S TAKE A CHANCE AND HOPE FOR THE BEST</a>
+													</h3>
+												</div>
+											</td>
+											<td>
+												<div class="post related-item">
+													<a href="#">
+														<div class="image" style="background-image: url(images/posts/26.jpg)">
+															<img src="images/posts/26.jpg" alt="" />
+														</div>
+													</a>
+													<h3 class="title">
+														<a href="#">CHANGE YOUR LIFE IF YOU FEEL IT’S NECESSARY</a>
+													</h3>
+												</div>
+											</td>
+
+										</tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- End Related Posts -->
+						</div>
+					</div>
+					<!-- End Post -->
+				</div>
+
+				<!-- Pagination -->
+				<div class="pagination clearfix">
+					<div class="old-post">
+						<a href="#">Old Posts</a>
+					</div>
+					<div class="new-post">
+						<a href="#">Newer Posts</a>
+					</div>
+				</div>
+				<!-- End Pagination -->
+			</div>
+
+			<!-- Sidebar -->
+			<div class="sidebar">
+
+				<!-- Widget About -->
+				{{> widgets/about}}
+				<!-- End Widget About -->
+
+				<!-- Follow Me -->
+				{{> widgets/followme}}
+				<!-- End Follow Me -->
+
+				<!-- Latest Posts -->
+				{{> widgets/latestposts}}
+				<!-- End Latest Posts -->
+
+				<!-- Popular Posts -->
+				{{> widgets/popularposts}}
+				<!-- End Popular Posts -->
+
+				<!-- MailChimp -->
+				{{> widgets/mailchimp}}
+				<!-- End MailChimp -->
+
+				<!-- Banner -->
+				{{> widgets/banner}}
+				<!-- End Banner -->
+
+
+				<!-- Twitter -->
+				{{> widgets/twitter}}
+				<!-- End Twitter -->
+			</div>
+			<!-- End Sidebar -->
+		</div>
+
+	</div>
+
+</div>

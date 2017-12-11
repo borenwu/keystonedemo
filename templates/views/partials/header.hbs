@@ -1,0 +1,64 @@
+<header class="header">
+
+	<!-- Header Fixed Top -->
+	<div class="header-fixed">
+
+		<!--Menu Mobile -->
+		<div class="menu-mobile">
+			<span class="item item-1"></span>
+			<span class="item item-2"></span>
+			<span class="item item-3"></span>
+		</div>
+
+		<!-- Navigation -->
+		<nav class="navigation">
+			<ul class="menu-list">
+				{{# each navLinks}}
+					<li class="menu-item">
+						<a href="{{ href }}">{{ label }}</a>
+					</li>
+				{{/each}}
+			</ul>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Right Box -->
+		<div class="header-right">
+			<div class="header-share">
+				{{#if user}}
+					<a  href="/keystone/signout"><i class="fa fa-sign-out"></i></a>
+				{{else}}
+					<a  href="/keystone/signin"><i class="fa fa-sign-in"></i></a></li>
+				{{/if}}
+			</div>
+			
+			<div class="header-search">
+				<i class="fa fa-search"></i>
+			</div>
+
+			<div class="header-search-popup header-popup">
+				<div class="header-close">
+					<span>x</span>
+				</div>
+				<div class="header-table">
+					<div class="header-tb-cell">
+						<form action="#">
+							<input type="text" placeholder="Press enter to search"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Right Box -->
+
+	</div>
+	<!-- End Header Fixed Top -->
+
+	<!-- Site Logo -->
+	<div class="site-logo">
+		<a href="#">
+			<img src="images/logo.png">
+		</a>
+	</div>
+	<!-- End Site Logo -->
+</header>
