@@ -5,6 +5,8 @@ require('dotenv').config();
 // Require keystone
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
+// var HandlebarsIntl = require('handlebars-intl');
+// HandlebarsIntl.registerWith(handlebars);
 
 keystone.init({
 	'name': 'demoapp',
